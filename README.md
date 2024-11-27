@@ -62,6 +62,6 @@ The dataset includes chest X-rays annotated with bounding boxes for 10 thoracic 
 ## 🚀 **How to Run the Project**
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/yourusername/thoracic-abnormality-detection.git
+git clone https://github.com/yasirusama61/YOLOv8-Object-Detection.git
 cd thoracic-abnormality-detection
 ```
