@@ -8,6 +8,10 @@
 
 This project leverages advanced object detection architectures to identify thoracic abnormalities in chest X-rays. We aim to compare **YOLOv8** (single-stage) and **Faster R-CNN** (two-stage) models, optimizing their performance for real-world medical diagnostics. 🩻
 
+## Project Overview
+
+![Chest X-Ray Abnormality Detection Overview](results/task_overview.png)
+
 ---
 
 ## 🎯 **Purpose of the Project**
@@ -20,9 +24,7 @@ Chest X-rays are a crucial diagnostic tool for thoracic diseases. This project s
 ---
 
 ## 📂 **Dataset Overview**
-### Dataset: [ChestX-Det10](https://www.kaggle.com/datasets) 📁
-
-![Chest X-Ray Abnormality Detection Overview](results/task_overview.png)
+### Dataset: [ChestX-Det10](https://www.kaggle.com/datasets) 
 
 The dataset includes 3,543 chest X-ray images annotated with bounding boxes for 10 thoracic abnormalities, including Nodule, Mass, and Pneumothorax. This project uses the ChestX-Det10 dataset, a subset of NIH ChestX-14.
 The dataset includes chest X-rays annotated with bounding boxes for 10 thoracic abnormalities:
