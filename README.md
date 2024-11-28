@@ -105,3 +105,22 @@ This snapshot illustrates the general architecture of Faster R-CNN, including ke
 git clone https://github.com/yasirusama61/YOLOv8-Object-Detection.git
 cd thoracic-abnormality-detection
 ```
+## 📊 Results
+
+### Faster R-CNN Metrics:
+- **AP@25**: 0.62
+- **AP@50**: 0.56
+- **AP@75**: 0.48
+- **Details**: Implemented CBAM attention mechanism and trained with ResNet-50 backbone. Performed well on larger abnormalities like Nodule but faced challenges with smaller regions like Mass.
+
+### YOLOv8 Metrics:
+- **Precision**: ~70%
+- **Recall**: ~65%
+- **mAP@50**: ~0.497
+- **mAP@50-95**: ~0.271
+- **Details**: Focused on speed and real-time application. Struggled with minority classes but performed robustly on larger, well-represented classes.
+
+### Next Steps:
+- Fine-tune both Faster R-CNN and YOLOv8 to address small-region abnormalities.
+- Improve dataset balance for minority classes with advanced sampling techniques.
+
