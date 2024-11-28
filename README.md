@@ -120,9 +120,11 @@ python scripts/convert_annotations.py
   This script:
   - Converts bounding box annotations to YOLO format (class_id x_center y_center width height).
   - Treats missing data (images without bounding boxes) as background by creating empty .txt files.
-  
+
 ### **Step 2: Verify Dataset**
   Ensure the following structure:
+
+  ```
   yolo_dataset/
   ├── images/
   │   ├── train/     # Training images
@@ -130,7 +132,7 @@ python scripts/convert_annotations.py
   ├── labels/
   │   ├── train/     # YOLO format labels for training
   │   ├── test/      # YOLO format labels for testing
-
+  ```
 ## 📊 Results
 
 ### Faster R-CNN Metrics:
