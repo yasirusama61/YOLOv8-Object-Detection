@@ -100,11 +100,37 @@ This snapshot illustrates the general architecture of Faster R-CNN, including ke
 ---
 
 ## 🚀 **How to Run the Project**
-### 1️⃣ Clone the Repository
+### 1️. Clone the Repository
 ```bash
 git clone https://github.com/yasirusama61/YOLOv8-Object-Detection.git
 cd thoracic-abnormality-detection
 ```
+### 2. Install dependencies:
+```bash
+pip install ultralytics
+```
+## 🛠️ **Data Preparation**
+
+### **Step 1: Convert Annotations to YOLO Format**  
+📄 Use the following script to process `train.json` and `test.json`, converting them into YOLO-compatible annotations:
+
+```bash
+python scripts/convert_annotations.py
+```
+  This script:
+  - Converts bounding box annotations to YOLO format (class_id x_center y_center width height).
+  - Treats missing data (images without bounding boxes) as background by creating empty .txt files.
+  
+### **Step 2: Verify Dataset**
+  Ensure the following structure:
+  yolo_dataset/
+  ├── images/
+  │   ├── train/     # Training images
+  │   ├── test/      # Testing images
+  ├── labels/
+  │   ├── train/     # YOLO format labels for training
+  │   ├── test/      # YOLO format labels for testing
+
 ## 📊 Results
 
 ### Faster R-CNN Metrics:
