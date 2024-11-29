@@ -99,6 +99,30 @@ This snapshot illustrates the general architecture of Faster R-CNN, including ke
 
 ---
 
+## 📊 **Exploratory Data Analysis (EDA)**
+
+### **1. Class Distribution**
+The dataset contains imbalanced classes, as shown in the chart below. This highlights the importance of oversampling, augmentation, or WeightedRandomSampler techniques to manage minority classes effectively.
+
+![Class Distribution](results/visualizations/class_distribution.png)
+
+---
+
+### **2. Bounding Box Distribution**
+Analyzing bounding box dimensions helps uncover patterns that can inform preprocessing and augmentation strategies. Below are the width, height, and area distributions of the bounding boxes in the dataset:
+
+#### **Bounding Box Width Distribution**
+![Bounding Box Width](results/visualizations/bounding_box_width.png)
+
+#### **Bounding Box Height Distribution**
+![Bounding Box Height](results/visualizations/bounding_box_height.png)
+
+#### **Bounding Box Area Distribution**
+![Bounding Box Area](results/visualizations/bounding_box_area.png)
+
+---
+
+
 ## 🚀 **How to Run the Project**
 ### 1️. Clone the Repository
 ```bash
