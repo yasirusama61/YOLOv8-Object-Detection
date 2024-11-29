@@ -121,7 +121,22 @@ Analyzing bounding box dimensions helps uncover patterns that can inform preproc
 ![Bounding Box Area](results/visualizations/bounding_box_area.png)
 
 ---
+### **Key Insights from EDA**
 
+1. **Class Distribution**:
+   - The dataset shows significant class imbalance, with **Consolidation** and **Effusion** being the most common categories, while **Mass** and **Pneumothorax** are underrepresented.
+   - This imbalance highlights the need for techniques like **oversampling**, **augmentation**, or **WeightedRandomSampler** to address model bias.
+
+2. **Bounding Box Width, Height, and Area**:
+   - **Width and Height**:
+     - Most bounding boxes are small, with the majority having widths and heights under 200 pixels.
+   - **Area**:
+     - Bounding box areas are heavily skewed towards smaller regions, indicating that small abnormalities dominate the dataset.
+   - These patterns suggest that the model must handle **small object detection** effectively, which may require **attention mechanisms** (e.g., CBAM) or **multi-scale feature maps** (e.g., FPN).
+
+By addressing these challenges during preprocessing and model design, performance on challenging classes and smaller abnormalities can be significantly improved.
+
+---
 
 ## 🚀 **How to Run the Project**
 ### 1️. Clone the Repository
