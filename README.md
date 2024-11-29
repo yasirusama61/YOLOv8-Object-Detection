@@ -146,7 +146,7 @@ cd thoracic-abnormality-detection
 ```
 ### 2. Install dependencies:
 ```bash
-pip install ultralytics
+pip install requirements.txt
 ```
 ## 🛠️ **Data Preparation**
 
