@@ -158,14 +158,14 @@ By addressing these challenges during preprocessing and model design, performanc
 - **Training Loss**: Reduced significantly due to better alignment with class distributions.
 - **Model Precision and Recall**: Improved metrics after applying weighted loss and attention modules.
 
-![Impact of Weighted Loss on Precision and Recall](results/visualizations/weighted_loss_impact.png)
+  ![Impact of Weighted Loss on Precision and Recall](results/visualizations/weighted_loss_impact.png)
 
 ---
 
 ### Visualization of Results:
 Below is a visualization of the augmented image and the corresponding feature refinements:
 
-![Sample Output Image with Augmentation](results/visualizations/augmented_iamge.png)
+  ![Sample Output Image with Augmentation](results/visualizations/augmented_iamge.png)
 
 ---
 
