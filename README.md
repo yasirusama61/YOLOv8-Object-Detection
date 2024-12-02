@@ -180,6 +180,23 @@ python scripts/convert_annotations.py
 - **AP@75**: 0.48
 - **Details**: Implemented CBAM attention mechanism and trained with ResNet-50 backbone. Performed well on larger abnormalities like Nodule but faced challenges with smaller regions like Mass.
 
+## 🖼️ **Detection Results**
+
+### Faster R-CNN Detection Results
+Below is a snapshot of the **Faster R-CNN** detection results on chest X-ray images. The model successfully identifies abnormalities such as Consolidation, Nodule, and Pneumothorax, leveraging a **ResNet-50 backbone** and the **ChestX-Det10 dataset**:
+
+![Faster R-CNN Detection Results](results/visualizations/detection_results.png)
+
+### Key Observations:
+- **Red Bounding Boxes**: Detected abnormalities.
+- **Yellow Labels**: Identified categories (e.g., Consolidation, Nodule).
+- The model demonstrates high accuracy for larger abnormalities but faces challenges with smaller regions.
+
+#### Performance Highlights:
+- **mAP@50**: 0.56
+- **AP@25**: 0.62
+- Focused on achieving better detection for underrepresented classes (e.g., Mass, Pneumothorax) through class weighting and augmentation strategies.
+
 ### YOLOv8 Metrics:
 - **Precision**: ~70%
 - **Recall**: ~65%
