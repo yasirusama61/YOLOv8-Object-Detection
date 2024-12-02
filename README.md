@@ -136,6 +136,43 @@ Analyzing bounding box dimensions helps uncover patterns that can inform preproc
 
 By addressing these challenges during preprocessing and model design, performance on challenging classes and smaller abnormalities can be significantly improved.
 
+## Baseline Adjustments and Improvements
+
+### Enhanced Class Handling:
+- **Weighted Loss**: Improved model performance by addressing class imbalance through weighted loss adjustments.
+- **Streamlined Data Augmentation**: Applied advanced augmentation techniques to improve model generalization and robustness.
+
+### Augmentation Techniques Applied:
+1. **Random Horizontal Flip**: Simulates flipped X-ray orientations to improve model robustness.
+2. **Random Rotation**: Introduces minor rotational variance (±10 degrees) to mimic natural misalignments.
+3. **Color Jitter**: Adjusts brightness and contrast to replicate real-world lighting inconsistencies.
+4. **Normalization**: Scales pixel values to ensure stable and efficient model convergence.
+
+![Augmented Image](images/image_with_augmentation.png)
+
+---
+
+### Optimization:
+- Introduced **attention modules** for feature refinement, leading to improved performance:
+  - **CBAM (Convolutional Block Attention Module)**: Combines spatial and channel-wise attention to enhance feature selection.
+
+### Impact of Optimization:
+- **Training Loss**: Reduced significantly due to better alignment with class distributions.
+- **Model Precision and Recall**: Improved metrics after applying weighted loss and attention modules.
+
+![Impact of Weighted Loss on Precision and Recall](results/visualizations/weighted_loss_impact.png)
+
+---
+
+### Visualization of Results:
+Below is a visualization of the augmented image and the corresponding feature refinements:
+
+![Sample Output Image with Augmentation](results/visualizations/augmented_iamge.png)
+
+---
+
+This section highlights the major adjustments, techniques, and improvements applied to enhance model performance for thoracic abnormality detection.
+
 ---
 
 ## 🚀 **How to Run the Project**
