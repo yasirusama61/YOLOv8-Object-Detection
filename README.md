@@ -158,15 +158,21 @@ By addressing these challenges during preprocessing and model design, performanc
 - **Training Loss**: Reduced significantly due to better alignment with class distributions.
 - **Model Precision and Recall**: Improved metrics after applying weighted loss and attention modules.
 
-  ![Impact of Weighted Loss on Precision and Recall](results/visualizations/weighted_loss_impact.png)
+Below is the comparison of Precision and Recall before and after applying weighted loss:
+
+<div align="center">
+  <img src="results/visualizations/weighted_loss_impact.png" alt="Impact of Weighted Loss on Precision and Recall" width="600">
+</div>
 
 ---
 
-### Visualization of Results:
+## Visualization of Results
+
 Below is a visualization of the augmented image and the corresponding feature refinements:
 
-  ![Sample Output Image with Augmentation](results/visualizations/augmented_iamge.png)
-
+<div align="center">
+  <img src="results/visualizations/augmented_image.png" alt="Sample Output Image with Augmentation" width="500">
+</div>
 ---
 
 This section highlights the major adjustments, techniques, and improvements applied to enhance model performance for thoracic abnormality detection.
