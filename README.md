@@ -148,8 +148,6 @@ By addressing these challenges during preprocessing and model design, performanc
 3. **Color Jitter**: Adjusts brightness and contrast to replicate real-world lighting inconsistencies.
 4. **Normalization**: Scales pixel values to ensure stable and efficient model convergence.
 
-![Augmented Image](images/image_with_augmentation.png)
-
 ---
 
 ### Optimization:
