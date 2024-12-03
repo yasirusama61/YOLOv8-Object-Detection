@@ -257,3 +257,17 @@ Below is a snapshot of the **Faster R-CNN** detection results on chest X-ray ima
 - Fine-tune both Faster R-CNN and YOLOv8 to address small-region abnormalities.
 - Improve dataset balance for minority classes with advanced sampling techniques.
 
+## 📚 Acknowledgments
+
+### 🗂️ Dataset
+The **ChestX-Det10 dataset**, a subset of the NIH ChestX-14 dataset, provided annotated chest X-ray images essential for training and evaluating the object detection models.  
+Reference: [ChestX-ray14 Dataset](https://arxiv.org/abs/1705.02315)
+
+### 📖 Research Contributions
+This project builds upon foundational research in computer vision and medical imaging. Notable references include:
+
+- **Wang et al.**: *"ChestX-ray8: Hospital-scale Chest X-ray Database and Benchmarks on Weakly-Supervised Classification and Localization of Common Thorax Diseases."*  
+  [DOI:10.1109/CVPR.2017.369](https://doi.org/10.1109/CVPR.2017.369)
+
+- **Rajpurkar et al.**: *"CheXNet: Radiologist-Level Pneumonia Detection on Chest X-Rays with Deep Learning."*  
+  [arXiv:1711.05225](https://arxiv.org/abs/1711.05225)
