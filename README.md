@@ -97,6 +97,12 @@ Faster R-CNN is a state-of-the-art two-stage object detection framework designed
 
 This snapshot illustrates the general architecture of Faster R-CNN, including key components like the Feature Pyramid Network (FPN), Region Proposal Network (RPN), and prediction heads for classification and regression.
 
+### 📈 Training Loss for Faster R-CNN
+
+The plot below illustrates the training loss over epochs for the Faster R-CNN model. The steady decrease and convergence indicate effective model training and optimization.
+
+![Training Loss over Epochs](results/visualizations/training_loss_faster_rcnn.png)
+
 ---
 
 ## 📊 **Exploratory Data Analysis (EDA)**
