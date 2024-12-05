@@ -5,8 +5,8 @@
 
 """
 This script handles preprocessing, augmentation, and preparation of the YOLO dataset
-for object detection using the ChestX-Det10 dataset. The script also performs training
-and evaluation of YOLO models, including data visualization and metrics computation.
+for object detection using the ChestX-Det10 dataset. The script also performs training,
+evaluation of YOLO models, and testing on a separate unseen test set.
 """
 
 import os
@@ -172,8 +172,9 @@ def evaluate_model():
     print(f"mAP@0.5: {metrics.box.map50.mean():.4f}")
     print(f"mAP@0.5:0.95: {metrics.box.map.mean():.4f}")
 
-# Main Execution
-if __name__ == "__main__":
-    create_directory_structure()
-    train_model()
-    evaluate_model()
+# Testing on Separate Unseen Test Set
+def test_on_unseen_test_set():
+    """Test YOLO model on a separate unseen test set."""
+    unseen_test_path = '/kaggle/input/chestxdet10dataset/test_data/test_data'
+    model = YOLO(f"{yolo_dataset_dir}/training_results/yolo_experiment/weights/best.pt")
+    results = model.predict(source=unseen_test_path,
