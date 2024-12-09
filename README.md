@@ -239,6 +239,22 @@ The following transformations were applied during training:
 
 ---
 
+### 🖼️ **Augmented Images**
+
+Below is a grid showcasing some examples of augmented chest X-ray images with their bounding box annotations:
+
+| Consolidation                         | Effusion & Atelectasis                | Bilateral Consolidation              |
+|---------------------------------------|---------------------------------------|---------------------------------------|
+| ![Consolidation](results/visualizations/augmented_samples/download(4).png)  | ![Effusion & Atelectasis](results/visualizations/augmented_samples/download(5).png) | ![Bilateral Consolidation](results/visualizations/augmented_samples/download(6).png) |
+
+| Effusion & Atelectasis (Additional Case) | Effusion                              |
+|------------------------------------------|---------------------------------------|
+| ![Effusion & Atelectasis](results/visualizations/augmented_samples/download(7).png) | ![Effusion](results/visualizations/augmented_samples/download(8).png)       |
+
+---
+
+---
+
 ## 🚀 **How to Run the Project**
 ### 1️. Clone the Repository
 ```bash
