@@ -219,6 +219,24 @@ The plot below illustrates the training loss over epochs for the Faster R-CNN mo
 
 ![Training Loss over Epochs](results/visualizations/training_loss_faster_rcnn.png)
 
+## 📷 Augmented Images and Preprocessing Pipeline
+
+### 🌟 Augmentation for YOLO Training
+
+To enhance the robustness and generalization of the YOLO object detection model, we implemented an augmentation pipeline using **Albumentations**. The augmentations were designed to introduce variability while maintaining the integrity of bounding box annotations in the medical chest X-ray dataset.
+
+### 🔧 **Augmentation Pipeline**
+
+The following transformations were applied during training:
+
+- **Random Rotate 90**: Introduces variability in orientation by rotating images at 90-degree angles.
+- **Horizontal Flip**: Simulates flipped X-ray images to increase data diversity.
+- **Color Jitter**: Adjusts brightness, contrast, saturation, and hue to mimic real-world lighting inconsistencies.
+- **Random Resized Crop**: Crops and resizes images to focus on specific regions while maintaining bounding box alignment.
+- **Coarse Dropout**: Randomly drops small regions of the image to mimic obstructions or artifacts (alternative to Cutout).
+- **Shift-Scale-Rotate**: Applies slight shifts, scaling, and rotations for variability in image positioning.
+- **Normalization**: Scales pixel values to match ImageNet statistics for consistent model convergence.
+
 ---
 
 ## 🚀 **How to Run the Project**
