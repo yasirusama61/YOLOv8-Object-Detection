@@ -345,7 +345,7 @@ This chart illustrates:
 
 ### Latest YOLOv8 Results
 
-![Validation Metrics](螢幕擷取畫面2024-12-03-164213.png)
+![Validation Metrics](YOLO_results/validation_metrics.png)
 
 #### Key Metrics:
 - **Precision**: ~78.7%
