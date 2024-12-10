@@ -313,13 +313,6 @@ Below is a snapshot of the **Faster R-CNN** detection results on chest X-ray ima
 - **AP@25**: 0.62
 - Focused on achieving better detection for underrepresented classes (e.g., Mass, Pneumothorax) through class weighting and augmentation strategies.
 
-### YOLOv8 Metrics:
-- **Precision**: ~70%
-- **Recall**: ~65%
-- **mAP@50**: ~0.497
-- **mAP@50-95**: ~0.271
-- **Details**: Focused on speed and real-time application. Struggled with minority classes but performed robustly on larger, well-represented classes.
-
 ## YOLOv8 Training Results
 
 ### Dataset Analysis and Class Distribution
@@ -349,6 +342,36 @@ This chart illustrates:
 
 - The F1-Confidence curve represents the balance between precision and recall for various confidence thresholds.
 - **Key Insights:** Class-specific F1 scores and overall performance at optimal confidence levels.
+
+### Latest YOLOv8 Results
+
+![Validation Metrics](螢幕擷取畫面2024-12-03-164213.png)
+
+#### Key Metrics:
+- **Precision**: ~78.7%
+- **Recall**: ~52.6%
+- **mAP@50**: ~61.2%
+- **mAP@50-95**: ~42.5%
+
+#### Class-Specific Performance:
+| Class           | Instances | Precision (P) | Recall (R) | mAP@50 | mAP@50-95 |
+|------------------|-----------|---------------|------------|--------|-----------|
+| Consolidation    | 604       | 0.76          | 0.71       | 0.695  | 0.501     |
+| Pneumothorax     | 46        | 0.70          | 0.46       | 0.496  | 0.364     |
+| Emphysema        | 63        | 0.88          | 0.79       | 0.799  | 0.722     |
+| Calcification    | 82        | 0.88          | 0.70       | 0.793  | 0.677     |
+| Nodule           | 211       | 0.78          | 0.78       | 0.781  | 0.604     |
+| Mass             | 166       | 0.84          | 0.54       | 0.658  | 0.536     |
+| Effusion         | 354       | 0.76          | 0.68       | 0.799  | 0.641     |
+| Atelectasis      | 109       | 0.79          | 0.43       | 0.558  | 0.470     |
+| Fibrosis         | 120       | 0.78          | 0.51       | 0.616  | 0.420     |
+
+---
+
+### Summary:
+- The model showed strong performance on well-represented classes but struggled with minority classes.
+- Achieved good speed and real-time application capability while maintaining robust performance.
+- **Results saved to**: `/kaggle/working/yolo_training/retrain_with_adjustments3`
 
 
 ### Next Steps:
