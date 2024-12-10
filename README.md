@@ -122,6 +122,47 @@ Below is a visualization of the augmented image and the corresponding feature re
 
 This section highlights the major adjustments, techniques, and improvements applied to enhance model performance for thoracic abnormality detection.
 
+## 📊 Dataset Balancing with SMOTE
+
+To address the significant class imbalance in the dataset, we employed **Synthetic Minority Oversampling Technique (SMOTE)**. This advanced oversampling approach effectively generated synthetic examples for the underrepresented classes, ensuring an equal number of samples across all categories.
+
+### Original Class Distribution
+Before applying SMOTE, the dataset showed a stark imbalance, with some classes being heavily underrepresented compared to others.
+
+| Class            | Instances |
+|------------------|-----------|
+| Consolidation    | 1467      |
+| Effusion         | 1182      |
+| Fibrosis         | 198       |
+| Calcification    | 428       |
+| Pneumothorax     | 377       |
+| Fracture         | 123       |
+| Emphysema        | 169       |
+| Nodule           | 187       |
+| Atelectasis      | 577       |
+| Mass             | 87        |
+
+### Class Distribution After SMOTE
+Following the application of SMOTE, all classes were balanced to contain the same number of samples, promoting fair training of the model and improving detection performance across minority classes.
+
+| Class            | Instances |
+|------------------|-----------|
+| Consolidation    | 1467      |
+| Effusion         | 1467      |
+| Fibrosis         | 1467      |
+| Calcification    | 1467      |
+| Pneumothorax     | 1467      |
+| Fracture         | 1467      |
+| Emphysema        | 1467      |
+| Nodule           | 1467      |
+| Atelectasis      | 1467      |
+| Mass             | 1467      |
+
+### Benefits of Using SMOTE
+- **Improved Model Generalization**: Balanced training data reduces model bias toward dominant classes.
+- **Enhanced Minority Class Performance**: SMOTE ensures equal representation, boosting recall for underrepresented conditions like "Mass" and "Fibrosis."
+- **Data Integrity Preservation**: Unlike random oversampling, SMOTE generates new examples based on feature space similarity, minimizing overfitting risks.
+
 ---
 
 ## 🛠️ **Project Workflow**
