@@ -251,7 +251,6 @@ Below is a grid showcasing some examples of augmented chest X-ray images with th
 |------------------------------------------|---------------------------------------|
 | ![Effusion & Atelectasis](results/visualizations/augmented_samples/download(7).png) | ![Effusion](results/visualizations/augmented_samples/download(8).png)       |
 
----
 
 ---
 
@@ -320,6 +319,37 @@ Below is a snapshot of the **Faster R-CNN** detection results on chest X-ray ima
 - **mAP@50**: ~0.497
 - **mAP@50-95**: ~0.271
 - **Details**: Focused on speed and real-time application. Struggled with minority classes but performed robustly on larger, well-represented classes.
+
+## YOLOv8 Training Results
+
+### Dataset Analysis and Class Distribution
+
+![Class Distribution and Bounding Box Statistics](YOLO_results/labels.jpg)
+
+This image showcases:
+- **Class Distribution:** Frequency of each class instance in the dataset.
+- **Bounding Box Statistics:** Distribution of bounding box sizes and positions.
+
+---
+
+### Training Performance Metrics
+
+![Training and Validation Losses](YOLO_results/results.png)
+
+This chart illustrates:
+- **Loss Curves:** Tracking the box, classification, and DFL losses for both training and validation sets.
+- **Precision and Recall:** Monitoring the improvement over epochs.
+- **Mean Average Precision (mAP):** Evaluating the overall model performance across thresholds.
+
+---
+
+### F1-Confidence Curve
+
+![F1-Confidence Curve](YOLO_results/F1_curve.png)
+
+- The F1-Confidence curve represents the balance between precision and recall for various confidence thresholds.
+- **Key Insights:** Class-specific F1 scores and overall performance at optimal confidence levels.
+
 
 ### Next Steps:
 - Fine-tune both Faster R-CNN and YOLOv8 to address small-region abnormalities.
