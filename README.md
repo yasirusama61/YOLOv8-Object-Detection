@@ -407,6 +407,29 @@ This chart illustrates:
 | Atelectasis      | 109       | 0.79          | 0.43       | 0.558  | 0.470     |
 | Fibrosis         | 120       | 0.78          | 0.51       | 0.616  | 0.420     |
 
+## 🔍 Validation Results: Predicted vs Ground Truth
+
+The following images showcase the results of our YOLO model on the validation dataset. The **predicted labels** are compared against the **ground truth labels** to visualize the model's performance.
+
+### 📊 Predicted Labels
+![Predicted Labels](YOLO_results/val_batch1_pred.jpg)
+
+- This image illustrates the bounding boxes and labels predicted by the YOLO model for various abnormalities in chest X-rays. 
+- The bounding boxes are color-coded for better clarity, with each box corresponding to a specific abnormality class (e.g., **Consolidation**, **Effusion**, etc.).
+- Confidence scores are displayed alongside the predicted labels.
+
+### 🏷 Ground Truth Labels
+![Ground Truth Labels](YOLO_results/val_batch1_labels.jpg)
+
+- This image contains the ground truth bounding boxes and labels from the validation dataset.
+- These labels were manually annotated and serve as the benchmark for evaluating the model's performance.
+
+### 🧠 Insights
+- The comparison between the predicted labels and ground truth labels allows us to identify the strengths and weaknesses of the model. 
+- The model performs well on **common abnormalities** such as Consolidation and Effusion, as seen by overlapping bounding boxes.
+- **Challenges** arise in detecting rarer abnormalities such as Fibrosis and Pneumothorax, where predictions may diverge from the ground truth.
+- Continuous training, data balancing (e.g., SMOTE), and augmentation have helped improve detection accuracy.
+
 ---
 
 ### Summary:
