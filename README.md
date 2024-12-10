@@ -384,6 +384,24 @@ This chart illustrates:
 - The F1-Confidence curve represents the balance between precision and recall for various confidence thresholds.
 - **Key Insights:** Class-specific F1 scores and overall performance at optimal confidence levels.
 
+## 📈 Precision-Confidence Curve
+
+![Precision-Confidence Curve](YOLO_results/P_curve.png)
+
+### Insights:
+- **Purpose**: This curve demonstrates the trade-off between model confidence and precision for detecting different abnormality classes in chest X-rays.
+- **Interpretation**:
+  - Precision measures the proportion of true positive predictions among all positive predictions made by the model.
+  - The x-axis represents the confidence threshold, while the y-axis represents the precision.
+  - Each line corresponds to a specific abnormality class (e.g., **Consolidation**, **Pneumothorax**, etc.), with the **bold blue line** showing the overall precision across all classes.
+- **Observations**:
+  - The model achieves higher precision at higher confidence thresholds.
+  - Classes like **Emphysema** and **Consolidation** exhibit stable performance, while some rarer classes like **Fibrosis** and **Pneumothorax** show more fluctuations due to fewer samples in the dataset.
+  - At a confidence threshold of 0.938, the model achieves its peak precision for all classes combined.
+
+### Importance:
+- This curve is a valuable tool for determining an optimal confidence threshold to balance precision and recall in real-world applications, ensuring that the model's predictions are both accurate and reliable.
+
 ### Latest YOLOv8 Results
 
 ![Validation Metrics](YOLO_results/validation_metrics.png)
