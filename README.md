@@ -49,21 +49,12 @@ The dataset contains imbalanced classes, as shown in the chart below. This highl
 ---
 
 ### **2. Bounding Box Distribution**
-Analyzing bounding box dimensions helps uncover patterns that can inform preprocessing and augmentation strategies. Below are the width, height, and area distributions of the bounding boxes in the dataset:
 
-#### **Bounding Box Width Distribution**
-<div align="center">
-  <img src="results/visualizations/bounding_box_width.png" alt="Bounding Box Width Distribution" width="600">
-</div>
+Analyzing bounding box dimensions helps uncover patterns that can inform preprocessing and augmentation strategies. Below is the combined visualization of the width, height, and area distributions of the bounding boxes in the dataset:
 
-#### **Bounding Box Height Distribution**
+#### **Bounding Box Width, Height, and Area Distribution**
 <div align="center">
-  <img src="results/visualizations/bounding_box_height.png" alt="Bounding Box Height Distribution" width="600">
-</div>
-
-#### **Bounding Box Area Distribution**
-<div align="center">
-  <img src="results/visualizations/bounding_box_area.png" alt="Bounding Box Area Distribution" width="600">
+  <img src="results/visualizations/bounding_box_distributions.png" alt="Bounding Box Distributions" width="1000">
 </div>
 
 ---
