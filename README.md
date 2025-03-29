@@ -467,7 +467,7 @@ To mitigate this:
 
 The image below summarizes the improved class distribution and bounding box characteristics after balancing:
 
-![Balanced Label Distribution](results/labels_new.jpg)
+![Balanced Label Distribution](YOLO_results/labels_new.jpg)
 
 This balancing step improved model robustness across all 14 conditions and is a key part of our pipeline before model training.
 
