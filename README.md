@@ -451,6 +451,27 @@ The following images showcase the results of our YOLO model on the validation da
 - Fine-tune both Faster R-CNN and YOLOv8 to address small-region abnormalities.
 - Improve dataset balance for minority classes with advanced sampling techniques.
 
+### 🔄 Class Balancing Strategy
+
+To address the **class imbalance** present in the ChestXDet10 dataset, we implemented a **targeted class-conditional augmentation** strategy focused on boosting the representation of underrepresented (minority) classes. This step was essential to ensure better model generalization and reduce bias toward majority classes.
+
+#### 📊 Distribution Before and After Balancing
+
+Originally, several classes—such as **Fracture**, **Pneumothorax**, **Calcification**, and **Fibrosis**—had significantly fewer labeled instances compared to others like **Nodule** or **Mass**. These imbalances led to poor performance and under-detection of rare pathologies.
+
+To mitigate this:
+
+- We applied **strong augmentations** (e.g., geometric transforms, contrast adjustments, and noise injections) to training images containing minority class labels.
+- Augmentations were selectively applied only to those classes that fell below a defined threshold of representation.
+- This strategy increased the number of instances for minority classes, bringing them closer in scale to the majority classes without distorting the overall data distribution.
+
+The image below summarizes the improved class distribution and bounding box characteristics after balancing:
+
+![Balanced Label Distribution](results/labels_new.jpg)
+
+This balancing step improved model robustness across all 14 conditions and is a key part of our pipeline before model training.
+
+
 ## 📚 Acknowledgments
 
 ### 🗂️ Dataset
